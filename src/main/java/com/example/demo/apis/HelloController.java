@@ -16,4 +16,9 @@ public class HelloController {
     public String greet() {
         return "Greetings from Spring Boot!";
     }
+
+    @GetMapping("/status")
+    public String status() {
+        return "Application is running smoothly.";
+    }
 }
